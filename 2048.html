@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1 maximum-scale=1,user-scalable=no">
+    <title>2048 Demo</title>
+    <link rel="stylesheet" href="2048.css" />
+    <script src="2048.js"></script>
+    <script src="animation.js"></script>
+</head>
+
+<body>
+    <p>
+        Top:<span id="topScore">0</span><br> Score:
+        <span id="score">0</span>
+    </p>
+    <div id="gridPanel"></div>
+    <div id="gameOver">
+        <div>
+            <!-- 半透明背景div -->
+        </div>
+        <p>
+            <!-- 前景弹出窗口 -->
+            Game Over!<br> Score:
+            <span id="finalScore"></span><br>
+            <a class="btn" onclick="game.start()">
+			Tyr again!
+			</a>
+        </p>
+    </div>
+</body>
+
+</html>
